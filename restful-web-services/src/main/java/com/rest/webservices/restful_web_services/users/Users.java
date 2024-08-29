@@ -12,8 +12,10 @@ import jakarta.validation.constraints.Past;
 import jakarta.validation.constraints.Size;
 
 
+@Entity
 public class Users {
-	
+
+	@Id
 	private Integer id;
 	
 	@Size(min=2, message = "Name should have least 2 characters")
